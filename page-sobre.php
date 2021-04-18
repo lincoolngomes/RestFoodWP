@@ -12,19 +12,17 @@
 	<h2 class="subtitulo"><?php the_title(); ?></h2>
 
 		<div class="grid-8">
-			<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/rest-fachada.jpg" alt="Fachada do Rest">
+			<img src="<?php the_field('foto_descricao') ?>" alt="<?php the_field('foto_descricao_alt') ?>">
 		</div>
 
 		<div class="grid-8">
-			<h2><?php the_field('titulo_historia'); ?></h2>
-			<?php the_field('texto_da_historia'); ?>
-			<!-- <p>O incentivo ao avanço tecnológico, assim como a mobilidade dos capitais internacionais auxilia a preparação e a composição dos níveis de motivação departamental.</p>
-			<p>Gostaria de enfatizar que o desenvolvimento contínuo de distintas formas de atuação prepara-nos para enfrentar situações atípicas decorrentes do remanejamento dos quadros funcionais.</p> -->
-			
-			<h2>Visão</h2>
-			<p>Não obstante, a expansão dos mercados mundiais faz parte de um processo de gerenciamento de alternativas às soluções ortodoxas.</p>
-			<h2>Valores</h2>
-			<p>O empenho em analisar a consolidação das estruturas apresenta tendências no sentido de aprovar a manutenção dos índices pretendidos.</p>
+
+			<!-- Sobre Widget  -->
+		<?php if(have_rows('sobre_widget')): while(have_rows('sobre_widget')) : the_row(); ?>
+			<h2><?php the_sub_field('titulo_widget'); ?></h2>
+			<?php the_sub_field('descricao_widget'); ?>
+			<?php endwhile; else : endif; ?>
+		
 		</div>
 	</section>
 
