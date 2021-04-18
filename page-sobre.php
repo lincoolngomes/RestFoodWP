@@ -8,6 +8,7 @@
 <body>
 
 
+
 	<section class="container sobre">
 	<h2 class="subtitulo"><?php the_title(); ?></h2>
 
