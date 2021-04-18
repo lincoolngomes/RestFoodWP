@@ -25,4 +25,6 @@
 		</div>
 	</section>
 
+	<?php endwhile; else: endif; ?>
+
 	<?php get_footer( ); ?>
