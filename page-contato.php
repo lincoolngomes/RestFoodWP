@@ -4,6 +4,7 @@
 
 <?php get_header( ); ?>
 
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <section class="container contato">
 	<h2 class="subtitulo">Contato</h2>
 
@@ -30,5 +31,8 @@
 		<p>Brasil - Terra - Via Láctea</p>
 	</div>
 </section>
+<?php endwhile; else: ?>
+<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+<?php endif; ?>
 
 <?php get_footer( ); ?>
