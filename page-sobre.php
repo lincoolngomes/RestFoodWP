@@ -1,21 +1,11 @@
+<?php
+// Template Name: Sobre
+?>
+
 <?php get_header( ); ?>
 
 <body>
 
-	<header>
-		<nav>
-			<ul>
-				<li><a href="index.html">Menu</a></li>
-				<li class="current_page_item"><a href="sobre.html">Sobre</a></li>
-				<li><a href="contato.html">Contato</a></li>
-			</ul>
-		</nav>
-
-		<h1><img src="img/rest.png" alt="Rest"></h1>
-
-		<p>Rua Marechal 29 – Copacabana – Rj</p>
-		<p class="telefone">2422-9201</p>
-	</header>
 
 	<section class="container sobre">
 		<h2 class="subtitulo">Sobre</h2>
